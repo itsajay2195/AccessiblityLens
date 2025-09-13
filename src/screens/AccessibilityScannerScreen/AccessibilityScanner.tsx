@@ -13,6 +13,7 @@ import {
 import {Camera, useCameraDevices} from 'react-native-vision-camera';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import {saveAnalysis} from '../../services/StorageService';
+import {analyzeAccessibility} from '../../services/AIservice';
 const {width, height} = Dimensions.get('window');
 const AccessibilityScanner = ({navigation}: any) => {
   const [hasPermission, setHasPermission] = useState(false);
@@ -314,5 +315,49 @@ const styles = StyleSheet.create({
     color: '#6B7280',
     marginTop: 5,
     textAlign: 'center',
+  },
+  permissionContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingHorizontal: 40,
+  },
+  permissionTitle: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#374151',
+    marginTop: 20,
+    marginBottom: 10,
+    textAlign: 'center',
+  },
+  permissionText: {
+    fontSize: 16,
+    color: '#6B7280',
+    textAlign: 'center',
+    lineHeight: 24,
+    marginBottom: 30,
+  },
+  permissionButton: {
+    backgroundColor: '#2563EB',
+    paddingHorizontal: 30,
+    paddingVertical: 15,
+    borderRadius: 8,
+  },
+  permissionButtonText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: '600',
+  },
+
+  // Loading Styles
+  loadingContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  loadingText: {
+    marginTop: 15,
+    fontSize: 16,
+    color: '#6B7280',
   },
 });
