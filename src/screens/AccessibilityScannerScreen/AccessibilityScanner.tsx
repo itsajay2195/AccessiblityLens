@@ -1,14 +1,14 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 
-const App = () => {
+const AccessibilityScanner = () => {
   return (
     <View>
-      <Text>App</Text>
+      <Text>AccessibilityScanner</Text>
     </View>
   );
 };
 
-export default App;
+export default AccessibilityScanner;
 
 const styles = StyleSheet.create({});

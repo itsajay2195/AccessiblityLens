@@ -1,14 +1,14 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 
-const App = () => {
+const HistoryScreen = () => {
   return (
     <View>
-      <Text>App</Text>
+      <Text>HistoryScreen</Text>
     </View>
   );
 };
 
-export default App;
+export default HistoryScreen;
 
 const styles = StyleSheet.create({});

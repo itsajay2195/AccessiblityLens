@@ -1,14 +1,14 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 
-const App = () => {
+const ResultsScreen = () => {
   return (
     <View>
-      <Text>App</Text>
+      <Text>ResultsScreen</Text>
     </View>
   );
 };
 
-export default App;
+export default ResultsScreen;
 
 const styles = StyleSheet.create({});
